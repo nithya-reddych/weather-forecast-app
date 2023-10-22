@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+@layer components {
+  .transition-bg-300 {
+    transition: background-color 300ms ease;
+  }
+}
+
+body {
+  @apply bg-clouds bg-cover bg-center h-screen flex items-center justify-center;
+}
+
+  h1 {
+    @apply text-4xl font-bold mb-4;
+}
+
+.temperature-box {
+  @apply flex flex-col items-center justify-center bg-opacity-20 bg-blue-300 text-center text-black text-xl cursor-pointer rounded-md w-fit p-10;
+}
+.myButton {
+  @apply text-black bg-sky-200 hover:bg-blue-300 px-10 py-5 font-serif text-4xl text-black border-none rounded-2xl cursor-pointer opacity-60;
+}
+.button-container {
+  @apply flex flex-col items-center mt-20;
+}
+.myButton:hover {
+  @apply bg-blue-300 hover:bg-opacity-50 flex items-center justify-center;
+}
+
+/* .button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+} */
+
